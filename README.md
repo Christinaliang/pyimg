@@ -1,4 +1,27 @@
 ## **pyimg - Image analysis utilities in Python**
 [![Build Status](https://travis-ci.org/PingjunChen/pyimg.svg?branch=master)](https://travis-ci.org/PingjunChen/pyimg)
 [![Documentation Status](https://readthedocs.org/projects/pyimg/badge/?version=latest)](https://pyimg.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/pyimg.svg)](https://badge.fury.io/py/pyimg)
 ![](https://img.shields.io/github/stars/PingjunChen/pyimg.svg)
+
+
+## Installation
+1. Installing Python dependencies.
+```
+$ pip install Pillow
+$ pip install scikit-image
+$ pip install opencv-python
+```
+2. Install [pyimg](https://pypi.org/project/pyimg).
+```
+$ pip install pyimg
+```
+
+## Documentation
+Hosted in [https://pyimg.readthedocs.io](https://pyimg.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
+
+## License
+[pyimg](https://github.com/PingjunChen/pyimg) is free software made available under the MIT License. For details see the [LICENSE](LICENSE) file.
+
+## Contributors
+See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the project.
