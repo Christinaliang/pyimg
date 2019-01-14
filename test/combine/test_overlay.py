@@ -9,8 +9,8 @@ PRJ_PATH = os.path.dirname(TEST_PATH)
 sys.path.insert(0, os.path.join(PRJ_PATH, "pyimg"))
 
 DATA_DIR = os.path.join(TEST_PATH, "data")
-from image import overlay_bbox
-from image import overlay_contour
+from combine import overlay_bbox
+from combine import overlay_contour
 
 def test_overlay_bbox():
     # load image

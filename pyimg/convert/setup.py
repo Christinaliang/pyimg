@@ -19,8 +19,8 @@ if __name__ == '__main__':
 
     setup(maintainer='Pingjun Chen',
           maintainer_email='chenpingjun@gmx.com',
-          description='Image operation utilities',
+          description='Image conversion utilities',
           url='https://github.com/PingjunChen/pydaily',
-          license='Apache',
+          license='MIT',
           **(configuration(top_path='').todict())
           )

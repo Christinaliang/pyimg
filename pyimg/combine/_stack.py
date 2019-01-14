@@ -21,6 +21,7 @@ def stackgray2rgb(gray):
         gray = (gray * 255.0).astype(np.uint8)
 
     rgb_img = np.stack((gray, ), axis=-1)
+    
     return rgb_img
 
 

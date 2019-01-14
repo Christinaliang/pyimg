@@ -4,7 +4,7 @@ import os, sys
 import numpy as np
 import cv2
 
-from ._color import stackgray2rgb
+from ._stack import stackgray2rgb
 
 
 __all__ = ['overlay_contour',
