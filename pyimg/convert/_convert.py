@@ -22,3 +22,25 @@ def PIL2npArr(pil_img):
         raise NotImplementedError()
 
     return np_img
+
+
+def Bool2Uint8(bool_img):
+    """ Convert bool image to dtype uint8.
+
+    """
+
+    u_img = bool_img.astype(np.uint8)
+    u_img *= 255
+
+    return u_img
+
+
+def Binary2Bool(bin_img):
+    """ Convert binary image to dtype bool.
+
+    """
+
+    max_val = np.amax(bin_img)
+    bool_img = (bin_img / max_val).astype('bool')
+
+    return bool_img
