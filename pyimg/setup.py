@@ -14,6 +14,7 @@ def configuration(parent_package='', top_path=None):
     config.add_subpackage('convert')
     config.add_subpackage('image')
     config.add_subpackage('metric')
+    config.add_subpackage('refine')    
 
     return config
 
