@@ -70,7 +70,6 @@ def overlay_contour(img, np_arr, rgb=(255, 0, 0), cnt_width=1):
     img: numpy array
     np_arr: numpy 2d array [0]-w, [1]-h
     rgb: drawed contour color
-    
     """
 
     arr_t = np_arr.transpose()
