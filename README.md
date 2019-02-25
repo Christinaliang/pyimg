@@ -15,7 +15,7 @@ $ pip install opencv-python
 ```
 2. Install [pyimg](https://pypi.org/project/pyimg).
 ```
-$ pip install pyimg
+$ pip install pyimg==0.0.2
 ```
 
 ## Documentation

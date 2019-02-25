@@ -3,14 +3,18 @@
 import os, sys
 import numpy as np
 
+
 __all__ = ['cal_confusion_matrix', 'cal_histogram',
             'cal_kappa', 'cal_linear_weighted_kappa',
             'cal_quadratic_weighted_kappa',
            ]
 
+
 def cal_confusion_matrix(ra, rb, min_r=None, max_r=None):
     """Calculate the confusion matrix between two raters.
+
     """
+
     if type(ra) == np.ndarray:
         ra = ra.tolist()
     if type(rb) == np.ndarray:
@@ -29,7 +33,9 @@ def cal_confusion_matrix(ra, rb, min_r=None, max_r=None):
 
 def cal_histogram(ra, min_r=None, max_r=None):
     """Calculate rating's histogram.
+
     """
+
     min_r = min(ra) if min_r==None else min_r
     max_r = max(ra) if max_r==None else max_r
     r_num = max_r - min_r + 1
@@ -42,7 +48,9 @@ def cal_histogram(ra, min_r=None, max_r=None):
 
 def cal_kappa(ra, rb, min_r=None, max_r=None):
     """Calculate Cohen's kappa for inter-rater agreement measuring
+
     """
+
     if type(ra) == np.ndarray:
         ra = ra.tolist()
     if type(rb) == np.ndarray:

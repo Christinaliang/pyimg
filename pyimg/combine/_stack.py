@@ -11,25 +11,32 @@ __all__ = ['stackgray2rgb',
 
 def stackgray2rgb(gray):
     """Stack three same gray image to 2 rgb image.
+
     """
-    assert len(gray.shape) in [2, 3], "Gray image shape error"
+
+    if len(gray.shape) not in [2, 3]:
+        raise AssertionError("Gray image shape error")
+
     if len(gray.shape) == 3:
-        assert gray.shape[2] == 1, "Not a proper gray image"
+        if gray.shape[2] != 1:
+            raise AssertionError("Not a proper gray image")
         gray = np.squeeze(gray, axis=2)
 
     if np.amax(gray) <= 1.0:
         gray = (gray * 255.0).astype(np.uint8)
 
     rgb_img = np.stack((gray, ), axis=-1)
-    
+
     return rgb_img
 
 
 def graymask2rgb(mask, channel=0):
     # Assert image shape
-    assert len(mask.shape) in [2, 3], "Mask shape error"
+    if len(mask.shape) not in [2, 3]:
+        raise AssertionError("Mask shape error")
     if len(mask.shape) == 3:
-        assert mask.shape[2] == 1, "Not a proper mask"
+        if mask.shape[2] != 1:
+            raise AssertionError("Not a proper mask")
 
     if np.amax(mask) <= 1.0:
         mask = (mask * 255.0).astype(np.uint8)

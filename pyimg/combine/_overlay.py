@@ -14,13 +14,14 @@ __all__ = ['overlay_contour',
 
 
 def overlay_bbox(im, boxes, rgb, stroke=1):
-    """Method to overlay bounding boxes on image.
+    """Overlay bounding boxes on image.
 
     Parameters
     ----------
     boxes: list of box with [x_min, y_min, x_max, y_max]
 
     """
+
     row_size, col_size = im.shape[0:2]
     l_shift = - ((stroke-1) // 2)
     r_shift = l_shift + stroke
@@ -43,7 +44,7 @@ def overlay_bbox(im, boxes, rgb, stroke=1):
 
 
 def overlay_box_label(img, boxes, labels):
-    """Method to overlay paired boxes and lables on image
+    """ Overlay paired boxes and lables on image
 
     Parameters
     ----------
@@ -69,6 +70,7 @@ def overlay_contour(img, np_arr, rgb=(255, 0, 0), cnt_width=1):
     img: numpy array
     np_arr: numpy 2d array [0]-w, [1]-h
     rgb: drawed contour color
+    
     """
 
     arr_t = np_arr.transpose()
