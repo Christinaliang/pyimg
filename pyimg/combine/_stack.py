@@ -25,7 +25,7 @@ def stackgray2rgb(gray):
     if np.amax(gray) <= 1.0:
         gray = (gray * 255.0).astype(np.uint8)
 
-    rgb_img = np.stack((gray, ), axis=-1)
+    rgb_img = np.stack((gray, gray, gray), axis=-1)
 
     return rgb_img
 
