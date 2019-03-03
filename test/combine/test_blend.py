@@ -15,9 +15,7 @@
 
 # def test_blend_images():
 #     mask_path = os.path.join(DATA_DIR, "input/input123.png")
-#     assert os.path.exists(mask_path), "{} not a valid file".format(mask_path)
 #     img_path = os.path.join(DATA_DIR, "gray/gray123.png")
-#     assert os.path.exists(img_path), "{} not a valid file".format(img_path)
 #     # Read mask and image
 #     mask = misc.imread(mask_path)
 #     img = misc.imread(img_path)
