@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import os, sys
-
 
 __all__ = ['AverageMeter',
            ]
-
 
 class AverageMeter(object):
     """Computes and stores the average and current value.
