@@ -10,7 +10,7 @@ __all__ = ['stackgray2rgb',
 
 
 def stackgray2rgb(gray):
-    """Stack three same gray image to 2 rgb image.
+    """Stack three same gray image to rgb image.
 
     """
 
