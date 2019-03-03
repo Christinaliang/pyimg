@@ -1,4 +1,5 @@
-## **pyimg - Image analysis utilities in Python**
+pyimg - Image analysis utilities in Python
+============
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/54d6fc8763734b75882a333579ea1c55)](https://app.codacy.com/app/PingjunChen/pyimg?utm_source=github.com&utm_medium=referral&utm_content=PingjunChen/pyimg&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/PingjunChen/pyimg.svg?branch=master)](https://travis-ci.org/PingjunChen/pyimg)
 [![Documentation Status](https://readthedocs.org/projects/pyimg/badge/?version=latest)](https://pyimg.readthedocs.io/en/latest/?badge=latest)
@@ -6,23 +7,29 @@
 ![](https://img.shields.io/github/stars/PingjunChen/pyimg.svg)
 
 
-## Installation
+Installation
+------------
+
 1. Installing Python dependencies.
-```
+```alpha
 $ pip install Pillow
 $ pip install scikit-image
 $ pip install opencv-python
 ```
+
 2. Install [pyimg](https://pypi.org/project/pyimg).
-```
+```alpha
 $ pip install pyimg==0.0.4
 ```
 
-## Documentation
+Documentation
+------------
 Hosted in [https://pyimg.readthedocs.io](https://pyimg.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
 
-## License
+License
+------------
 [pyimg](https://github.com/PingjunChen/pyimg) is free software made available under the MIT License. For details see the [LICENSE](LICENSE) file.
 
-## Contributors
+Contributors
+------------
 See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the project.
