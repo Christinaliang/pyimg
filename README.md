@@ -1,7 +1,7 @@
 pyimg - Image analysis utilities in Python
 ============
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/54d6fc8763734b75882a333579ea1c55)](https://app.codacy.com/app/PingjunChen/pyimg?utm_source=github.com&utm_medium=referral&utm_content=PingjunChen/pyimg&utm_campaign=Badge_Grade_Dashboard)
-[![Build Status](https://travis-ci.org/PingjunChen/pyimg.svg?branch=master)](https://travis-ci.org/PingjunChen/pyimg)
+[![CircleCI](https://circleci.com/gh/PingjunChen/pyimg.svg?style=svg)](https://circleci.com/gh/PingjunChen/pyimg)
 [![Documentation Status](https://readthedocs.org/projects/pyimg/badge/?version=latest)](https://pyimg.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/pyimg.svg)](https://badge.fury.io/py/pyimg)
 ![](https://img.shields.io/github/stars/PingjunChen/pyimg.svg)
