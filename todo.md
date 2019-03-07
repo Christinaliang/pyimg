@@ -5,3 +5,7 @@ Todo
     - [ ] Documentation
     - [x] Issues
     - [x] Pull Requests
+
+Functionality
+------------
+    - add center_crop
