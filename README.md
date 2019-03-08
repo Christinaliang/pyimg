@@ -8,14 +8,14 @@ pyimg - Image analysis utilities in Python
 
 Installation
 ------------
-1. Installing Python dependencies.
+ 1. Installing Python dependencies.
 ```bash
 pip install Pillow
 pip install scikit-image
 pip install opencv-python
 ```
 
-2. Install [pyimg](https://pypi.org/project/pyimg).
+ 2. Install [pyimg](https://pypi.org/project/pyimg).
 ```bash
 pip install pyimg==0.0.4
 ```
