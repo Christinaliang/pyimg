@@ -2,7 +2,6 @@
 
 import os, sys
 from skimage import io
-from skimage import img_as_ubyte
 
 FILE_PATH = os.path.abspath(__file__)
 TEST_PATH = os.path.dirname(os.path.dirname(FILE_PATH))

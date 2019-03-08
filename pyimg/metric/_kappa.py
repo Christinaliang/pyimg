@@ -3,14 +3,16 @@
 import numpy as np
 
 
-__all__ = ['cal_confusion_matrix', 'cal_histogram',
-            'cal_kappa', 'cal_linear_weighted_kappa',
-            'cal_quadratic_weighted_kappa',
+__all__ = ['cal_confusion_matrix',
+           'cal_histogram',
+           'cal_kappa',
+           'cal_linear_weighted_kappa',
+           'cal_quadratic_weighted_kappa',
            ]
 
 
 def cal_confusion_matrix(ra, rb, min_r=None, max_r=None):
-    """Calculate the confusion matrix between two raters.
+    """ Calculate the confusion matrix between two raters.
 
     """
 
@@ -19,6 +21,7 @@ def cal_confusion_matrix(ra, rb, min_r=None, max_r=None):
     if type(rb) == np.ndarray:
         rb = rb.tolist()
     assert len(ra) == len(rb), "Two ratings are of different length"
+
     min_r = min(ra + rb) if min_r==None else min_r
     max_r = max(ra + rb) if max_r==None else max_r
     r_num = max_r - min_r + 1
@@ -31,7 +34,7 @@ def cal_confusion_matrix(ra, rb, min_r=None, max_r=None):
 
 
 def cal_histogram(ra, min_r=None, max_r=None):
-    """Calculate rating's histogram.
+    """ Calculate rating's histogram.
 
     """
 
@@ -46,15 +49,17 @@ def cal_histogram(ra, min_r=None, max_r=None):
 
 
 def cal_kappa(ra, rb, min_r=None, max_r=None):
-    """Calculate Cohen's kappa for inter-rater agreement measuring
+    """ Calculate Cohen's kappa for inter-rater agreement measuring.
 
     """
 
-    if type(ra) == np.ndarray:
+    if isinstance(ra, np.ndarray):
         ra = ra.tolist()
-    if type(rb) == np.ndarray:
+    if isinstance(rb, np.ndarray):
         rb = rb.tolist()
-    assert len(ra) == len(rb), "Two ratings are of different length"
+    if len(ra) != len(rb):
+        raise AssertionError("Two ratings are of different length")
+
     min_r = min(ra + rb) if min_r==None else min_r
     max_r = max(ra + rb) if max_r==None else max_r
 
@@ -78,13 +83,17 @@ def cal_kappa(ra, rb, min_r=None, max_r=None):
 
 
 def cal_linear_weighted_kappa(ra, rb, min_r=None, max_r=None):
-    """Calculate linear weighted kappa for inter-rater agreement measuring
+    """ Calculate linear weighted kappa for inter-rater agreement measuring.
+
     """
-    if type(ra) == np.ndarray:
+
+    if isinstance(ra, np.ndarray):
         ra = ra.tolist()
-    if type(rb) == np.ndarray:
+    if isinstance(rb, np.ndarray):
         rb = rb.tolist()
-    assert len(ra) == len(rb), "Two ratings are of different length"
+    if len(ra) != len(rb):
+        raise AssertionError("Two ratings are of different length")
+
     min_r = min(ra + rb) if min_r==None else min_r
     max_r = max(ra + rb) if max_r==None else max_r
 
@@ -108,13 +117,17 @@ def cal_linear_weighted_kappa(ra, rb, min_r=None, max_r=None):
 
 
 def cal_quadratic_weighted_kappa(ra, rb, min_r=None, max_r=None):
-    """Calculate quadratic weighted kappa for inter-rater agreement measuring
+    """ Calculate quadratic weighted kappa for inter-rater agreement measuring.
+
     """
-    if type(ra) == np.ndarray:
+
+    if isinstance(ra, np.ndarray):
         ra = ra.tolist()
-    if type(rb) == np.ndarray:
+    if isinstance(rb, np.ndarray):
         rb = rb.tolist()
-    assert len(ra) == len(rb), "Two ratings are of different length"
+    if len(ra) != len(rb):
+        raise AssertionError("Two ratings are of different length")
+
     min_r = min(ra + rb) if min_r==None else min_r
     max_r = max(ra + rb) if max_r==None else max_r
 
