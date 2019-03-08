@@ -16,11 +16,12 @@ def cal_confusion_matrix(ra, rb, min_r=None, max_r=None):
 
     """
 
-    if type(ra) == np.ndarray:
+    if isinstance(ra, np.ndarray):
         ra = ra.tolist()
-    if type(rb) == np.ndarray:
+    if isinstance(rb, np.ndarray):
         rb = rb.tolist()
-    assert len(ra) == len(rb), "Two ratings are of different length"
+    if len(ra) != len(rb):
+        raise AssertionError("Two ratings are of different length")
 
     min_r = min(ra + rb) if min_r==None else min_r
     max_r = max(ra + rb) if max_r==None else max_r
